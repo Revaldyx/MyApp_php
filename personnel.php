@@ -11,7 +11,7 @@ if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
 }
 
-$callback = $_REQUEST['callback'];
+$callback = $_REQUEST['callback']; 
 
 // Create the output object.
 $output = array();

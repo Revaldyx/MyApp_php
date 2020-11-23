@@ -6,14 +6,14 @@ $user_id= $records->{"user_id"};
 $name = $records->{"name"};
 $email = $records->{"email"};
 $phone = $records->{"phone"};
-$hobby = $records->{"hobby"};
+$jurusan = $records->{"jurusan"};
 
 $success = 'false';
 $error = 'no error';
 // Create the output object.
 $output = array();
 
-$query="update personnel set name='$name',email='$email',phone='$phone',hobby='$hobby' where user_id=$user_id";
+$query="update personnel set name='$name',email='$email',phone='$phone',jurusan='$jurusan' where user_id=$user_id";
 
 if ($conn->query($query) === TRUE) {
     $success = 'true';

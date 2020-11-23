@@ -12,6 +12,8 @@ die("Connection failed: " . $conn->connect_error);
 }
 
 $callback = $_REQUEST['callback']; 
+//$userid = $_REQUEST['user_id'];
+
 
 // Create the output object.
 $output = array();

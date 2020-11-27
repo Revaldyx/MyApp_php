@@ -17,7 +17,7 @@ $userid = $_REQUEST['user_id'];
 // Create the output object.
 $output = array();
 $success = 'false';
-$query="SELECT * FROM personnel WHERE user_id = $userid" or die("Cannot access item");
+$query="select * from personnel WHERE user_id = $userid" or die("Cannot access item");
 $result = mysqli_query($conn, $query); if(mysqli_num_rows($result) > 0){
 while($obj = mysqli_fetch_object($result)) {
 $output[] = $obj;

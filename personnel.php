@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "myapp";
+$dbname = "myapp"; 
 
 $conn	=	new	mysqli($servername,	$username,	$password,
 $dbname);
@@ -18,7 +18,7 @@ $callback = $_REQUEST['callback'];
 // Create the output object.
 $output = array();
 $success = 'false';
-$query="select * from personnel" or die("Cannot access item");
+$query="SELECT * from personnel" or die("Cannot access item");
 $result = mysqli_query($conn, $query); if(mysqli_num_rows($result) > 0){
 while($obj = mysqli_fetch_object($result)) {
 $output[] = $obj;

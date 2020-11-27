@@ -7,13 +7,12 @@ $user_id = $records->{"user_id"};
 $name = $records->{"name"};
 $email = $records->{"email"};
 $phone = $records->{"phone"};
-$hobby = $records->{"hobby"};
-//$divisi = $records->{"divisi"};
+$jurusan = $records->{"jurusan"};
 
 // Create the output object.
 $output = array();
 $success = 'false';
-$query="INSERT INTO personnel (`user_id`, `name`, `email`, `phone`, `hobby`) VALUES ('$user_id','$name','$email','$phone','$hobby')";
+$query="INSERT INTO personnel VALUES ('$user_id','$name','$email','$phone','$jurusan')";
 if ($conn->query($query) === TRUE) {
     $success = 'true';
 }
